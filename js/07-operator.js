@@ -28,12 +28,20 @@
         关系运算符都是左结合性(从左至右的运算)
         关系运算符中 > < >= <= 的优先级高于 == != === !==
 5. 逻辑运算符
-    &&  与
-    ||  或
-    !   非
+    && 与   || 或   ! 非
+        // || 或运算符可以用与 预设赋值中
+        let n='';           // null undefined '' 都会转换为 false
+        let i = n || 123;   // 默认转换，如果是false，就是默认值
+        console.log(`let n='';let i = n || 123; i=${i}`);
+6. 三元运算符
+    条件表达式 ? 结果A : 结果B;
+7. 位运算符
+    & 与   | 或   ^ 异或
+
+更新：
+    将不同的例子封装到函数中，想看例子，直接调用函数
 */
 
-// 将不同的例子封装到函数中
 // 算数运算符
 let cal = ()=>{
     console.log('算数运算');
@@ -139,6 +147,18 @@ let logic = ()=>{
     console.log(`!false=${!false}`);
     console.log('');
     
+    // 或运算符可以用与 预设赋值中
+    let n='';           // null undefined '' 都会转换为 false
+    let i = n || 123;   // 默认转换，如果是false，就是默认值
+    console.log(`let n='';let i = n || 123; i=${i}`);
 }
 
-logic();
+let tri = ()=>{
+    // 条件表达式 ? 结果A : 结果B;
+    console.log('条件表达式 ? 结果A : 结果B;');
+    console.log(`(10 > 5) ? 10 : 5=${(10>5)? 10:5}`);
+    console.log('');
+    
+}
+
+tri();
