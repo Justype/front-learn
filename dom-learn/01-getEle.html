@@ -7,9 +7,48 @@
     <title>GetElement</title>
 </head>
 <body>
-    
+    <h1>通过DOM获取元素</h1>
+        <p>有很多方法，其中最全面的就是:</p>
+        <code>document.querySelector(); //通过选择器选择第一个元素</code>
+        <br>
+        <code>document.querySelectorAll(); //通过选择器选择所有元素</code>
+    <div class="father">father</div>
+    <div class="son" id="box">son</div>
+    <div class="father">
+        <input type="text" name="usr">
+        <input type="password" name="usr">
+    </div>
+
     <script>
-    
+        // 通过id
+        let oDiv = document.getElementById('box');
+        console.log(oDiv);
+        console.log(typeof oDiv);
+        
+        // 通过类名，返回多个
+        let oDivs = document.getElementsByClassName('father');
+        console.log(oDivs);
+        console.log(typeof oDivs);
+
+        // 通过 name。返回多个
+        oDivs = document.getElementsByName('usr');
+        console.log(oDivs);
+        console.log(typeof oDivs);
+
+        //通过 标签名称，返回多个
+        oDivs = document.getElementsByName('div');
+        console.log(oDivs);
+        console.log(typeof oDivs);
+
+        // 通过选择器获取
+        oDiv = document.querySelector('.father');   //只返回第一个
+        console.log(oDiv);
+        console.log(typeof oDiv);
+
+        oDiv = document.querySelectorAll('.father');
+        console.log(oDivs);
+        console.log(typeof oDivs);
+
     </script>
 </body>
 </html>
