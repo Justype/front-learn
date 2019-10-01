@@ -22,3 +22,18 @@
 
 */
 
+// 特殊的函数，递归（调用自身）
+
+function fibo(i){
+    if(i===0)
+        return 0;
+    else if(i===1 || i===2)
+        return 1;
+    else if(i>2)
+        return fibo(i-1) + fibo(i-2);
+    else
+        return -1;
+}
+
+// fibo(50);   // 调用函数太多，性能太低，无法运行
+fibo(25);
