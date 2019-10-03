@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tags</title>
+</head>
+<body>
+    <h2>排版标签</h2>
+    <h3>标题标签</h3>
+    <ul>
+        <li>&lt;h1&gt;,&lt;h2&gt;,&lt;h3&gt;,&lt;h4&gt;,&lt;h5&gt;,&lt;h6&gt;（共六种）</li>
+        <li>根据重要性逐级递减</li>
+        <li>&lt;h1&gt;的语义很重，一般一个网页只有一个，给logo使用</li>
+    </ul>
+    <p>以下是标签的展示：</p>
+    <h1>h1</h1>
+    <h2>h2</h2>
+    <h3>h3</h3>
+    <h4>h4</h4>
+    <h5>h5</h5>
+    <h6>h6</h6>
+
+    <hr>
+
+    <h3>段落标签</h3>
+    <p>&lt;p&gt;，paragraph 段落，就是用来显示段落的</p>
+    <h3>水平线标签</h3>
+    <p>&lt;hr&gt;，HTML5支持不闭合的，也支持闭合的&lt;hr/&gt;</p>
+
+    <h3>换行标签</h3>
+    <p>&lt;br&gt; 与&lt;hr&gt;相似，HTML5支持不闭合的，也支持闭合的&lt;br/&gt;</p>
+    <h3>div & span</h3>
+    <p>&lt;div&gt; 为块级标签，&lt;span&gt; 为行内标签。</p>
+    <ul>
+        <li>行内标签不能包裹块级标签</li>
+        <li>块级标签 默认 自动换行</li>
+    </ul>
+
+    <h2>文本格式化标签</h2>
+    <ul>
+        <li><strong>加粗</strong>，&lt;b&gt;(bold) &lt;strong&gt;</li>
+        <li><em>斜体</em>，&lt;i&gt;(italic) &lt;em&gt;(emphasis)</li>
+        <li><del>删除</del>，&lt;s&gt; &lt;del&gt;(delete)</li>
+        <li><ins>下划线</ins>，&lt;u&gt;(underline) &lt;ins&gt;(insert)</li>
+    </ul>
+    <p>HTML 推荐使用strong，em等带有语义的标签，就如同HTML的名字一样的，超文本标记语言，就是因为该文本重要，才会加粗</p>
+
+    <h2>标签属性</h2>
+    <p>&lt;标记名 属性1="属性值" 属性2="属性值"&gt;</p>
+    <ul>
+        <li>可以有多个属性</li>
+        <li>属性有默认值，需要自定义再写</li>
+        <li>属性值建议用英文双引号包裹</li>
+    </ul>
+
+    <h2>图像标签</h2>
+    <p>&lt;img src="图片地址" alt="代替文本" height="" weight="" border="" title="鼠标hover时显示的文本"&gt;</p>
+    <ul>
+        <li>高度，宽度设置一个的话，按比例自动缩放</li>
+        <li>图片标签是单标签，与hr、br相似</li>
+        <li>行内标签，不会自动换行</li>
+    </ul>
+    <img src="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE1Mu3b?ver=5c31" alt="Microsoft Logo" title="Microsoft">
+    Microsoft Logo
+
+    <h2>链接标签</h2>
+    <p>&lt;a href="目标地址"&gt;</p>
+    <a href="https://www.microsoft.com">Microsoft</a>
+</body>
+</html>
