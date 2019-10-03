@@ -5,8 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Tags</title>
+
+    <base target="_blank">
 </head>
 <body>
+    <h1>HTML 标签</h1>
+    <p>学习基本的HTML标签，如果标题是超链接，链接的是MDN中文文档。</p>
     <h2>排版标签</h2>
     <h3>标题标签</h3>
     <ul>
@@ -21,7 +25,6 @@
     <h4>h4</h4>
     <h5>h5</h5>
     <h6>h6</h6>
-
     <hr>
 
     <h3>段落标签</h3>
@@ -37,6 +40,7 @@
         <li>行内标签不能包裹块级标签</li>
         <li>块级标签 默认 自动换行</li>
     </ul>
+    <hr>
 
     <h2>文本格式化标签</h2>
     <ul>
@@ -46,6 +50,7 @@
         <li><ins>下划线</ins>，&lt;u&gt;(underline) &lt;ins&gt;(insert)</li>
     </ul>
     <p>HTML 推荐使用strong，em等带有语义的标签，就如同HTML的名字一样的，超文本标记语言，就是因为该文本重要，才会加粗</p>
+    <hr>
 
     <h2>标签属性</h2>
     <p>&lt;标记名 属性1="属性值" 属性2="属性值"&gt;</p>
@@ -54,6 +59,7 @@
         <li>属性有默认值，需要自定义再写</li>
         <li>属性值建议用英文双引号包裹</li>
     </ul>
+    <hr>
 
     <h2>图像标签</h2>
     <p>&lt;img src="图片地址" alt="代替文本" height="" weight="" border="" title="鼠标hover时显示的文本"&gt;</p>
@@ -64,9 +70,75 @@
     </ul>
     <img src="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE1Mu3b?ver=5c31" alt="Microsoft Logo" title="Microsoft">
     Microsoft Logo
+    <hr>
 
     <h2>链接标签</h2>
-    <p>&lt;a href="目标地址"&gt;</p>
-    <a href="https://www.microsoft.com">Microsoft</a>
+    <p>&lt;a href="目标地址" target="打开网页的方式"&gt;</p>
+    <a href="https://www.microsoft.com" target="_blank">Microsoft</a>
+
+    <h3>锚点定位</h3>
+    <p>利用链接标签和目标的id属性，&lt;a href="#id名"&gt;</p>
+
+    <h3>base标签</h3>
+    <p>在&lt;head&gt;内添加&lt;base target="打开网页的方式"&gt; // 单标签</p>
+    <p>设置当前网页默认标签的打开方式</p>
+    <hr>
+
+    <h2>HTML 特殊字符</h2>
+    <p>&<ins>特殊的代码</ins>;</p>
+    <ul>
+        <li>空格：nbsp</li>
+        <li>小于号：lt</li>
+    </ul>
+    <hr>
+
+    <h2>注释标签</h2>
+    <p>&lt;!-- 要注释的内容 --&gt;</p>
+    <p>注释不会在网页内显示，方便代码维护</p>
+    <hr>
+
+    <h2>相对路径</h2>
+    <p>网页中一般使用相对路径，如果工作区在主机中转换了位置，绝对路径会改变，通过之前的绝对路径，找不到原来的文件，所以要使用相对路径。</p>
+    <ul>
+        <li>同一级 直接写文件名 或 ./文件名 </li>
+        <li>上一级文件夹 ../</li>
+        <li>下一级文件夹 文件夹名/</li>
+    </ul>
+    <hr>
+
+    <h2><a href="https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/ul">无序列表</a></h2>
+    <pre>&lt;ul&gt;
+    &lt;li&gt;  &lt;li/&gt;
+    &lt;li&gt;  &lt;li/&gt;
+    ...
+&lt;ul/&gt;</pre>
+    <p>建议 ul内只放li标签</p>
+    <p>可以嵌套:</p>
+    <pre>&lt;ul&gt;
+    &lt;li&gt;  &lt;li/&gt;
+    &lt;li&gt;  
+        &lt;ul&gt;
+            &lt;li&gt;  &lt;li/&gt;
+            &lt;li&gt;  &lt;li/&gt;
+        &lt;ul/&gt;
+    &lt;li/&gt;
+&lt;ul/&gt;</pre>
+
+    <h3><a href="https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/ol">有序列表</a></h3>
+    <p>把ul换位ol(ordered list)</p>
+
+    <h3><a href="https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/dl">自定义列表</a></h3>
+    <p>感觉这个用的很少</p>
+    <pre>&lt;dl&gt;
+    &lt;dt&gt; 名词1 &lt;dt/&gt;
+    &lt;dd&gt; 名词1描述1 &lt;dd/&gt;
+    &lt;dd&gt; 名词1描述2 &lt;dd/&gt;
+
+    &lt;dt&gt; 名词2 &lt;dt/&gt;
+    &lt;dd&gt; 名词2描述1 &lt;dd/&gt;
+    &lt;dd&gt; 名词2描述2 &lt;dd/&gt;
+    ...
+&lt;dl/&gt;</pre>
+
 </body>
 </html>
