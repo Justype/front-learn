@@ -155,6 +155,8 @@ let logic = ()=>{
 
 let tri = ()=>{
     // 条件表达式 ? 结果A : 结果B;
+    // true 结果A
+    // false 结果B
     console.log('条件表达式 ? 结果A : 结果B;');
     console.log(`(10 > 5) ? 10 : 5=${(10>5)? 10:5}`);
     console.log('');
